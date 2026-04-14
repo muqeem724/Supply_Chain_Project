@@ -7,13 +7,13 @@ use Supply_chain;
 ###_______________________________________________________###
 
 create table Customer (
-   Id                   int                  ,
-   FirstName            varchar(40)         not null,
-   LastName             varchar(40)         not null,
-   City                 varchar(40)         null,
-   Country              varchar(40)         null,
-   Phone                varchar(20)         null,
-   constraint PK_CUSTOMER primary key (Id)
+Id							int								,
+FirstName					varchar(40)				not null,
+LastName					varchar(40)				not null,
+City						varchar(40)				null,
+Country						varchar(40)				null,
+Phone						varchar(20)				null,
+constraint PK_Customer		primary key (Id)
 );
 create index IndexCustomerName on Customer (
 LastName ASC,
@@ -59,8 +59,6 @@ create index IndexOrderItemProductId on OrderItem (
 ProductId ASC
 );
 
-##### Create table Product along with its indexes 
-###_______________________________________________________###
 
 create table Product (
    Id                   int                  ,
